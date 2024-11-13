@@ -1,0 +1,48 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.restart-button {
+  width: fit-content;
+}
+
+.game-status-title {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.board-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  color: white;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  grid-column: span 1;
+  cursor: pointer;
+}

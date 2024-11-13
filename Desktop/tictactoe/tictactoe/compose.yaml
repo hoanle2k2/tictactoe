@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: .
+    image: hoanle2k2/tictactoe:v1
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development
